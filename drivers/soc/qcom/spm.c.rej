@@ -1,0 +1,17 @@
+--- drivers/soc/qcom/spm.c	2023-01-07 10:41:27.000000000 +0800
++++ drivers/soc/qcom/spm.c	2023-01-07 10:50:25.000000000 +0800
+@@ -251,8 +291,14 @@
+ 	  .data = &spm_reg_8909_cpu },
+ 	{ .compatible = "qcom,msm8916-saw2-v3.0-cpu",
+ 	  .data = &spm_reg_8916_cpu },
++	{ .compatible = "qcom,msm8939-saw2-v3.0-cpu",
++	  .data = &spm_reg_8939_cpu },
+ 	{ .compatible = "qcom,msm8974-saw2-v2.1-cpu",
+ 	  .data = &spm_reg_8974_8084_cpu },
++	{ .compatible = "qcom,msm8976-gold-saw2-v2.3-l2",
++	  .data = &spm_reg_8976_gold_l2 },
++	{ .compatible = "qcom,msm8976-silver-saw2-v2.3-l2",
++	  .data = &spm_reg_8976_silver_l2 },
+ 	{ .compatible = "qcom,msm8998-gold-saw2-v4.1-l2",
+ 	  .data = &spm_reg_8998_gold_l2 },
+ 	{ .compatible = "qcom,msm8998-silver-saw2-v4.1-l2",
